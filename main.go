@@ -56,7 +56,7 @@ func main() {
 		os.Exit(1)
 	}
 	// Get pricing
-	market := coinmarketcap.New(APIKey)
+	market := coinmarketcap.New(coinmarketcapAPIKey)
 	quotes, _, err := market.PriceConversion(context.Background(), coinmarketcap.PriceConversionParams{
 		Amount:     amount,
 		ID:         USDID,
